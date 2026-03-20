@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrViewMacros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrViewMacros",
+  "parent":{
+    "name":"Admin",
+    "path":"folders/Scripts/Admin.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

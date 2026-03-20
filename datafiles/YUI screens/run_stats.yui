@@ -14,10 +14,10 @@ root:
     - type: panel
       theme: elektra light
       canvas: 
-        top: 75
-        left: 100
+        top: 150
+        left: 225
       padding: 20
-      size: {w: 200}
+      size: {w: 400}
       background: ~spPanel
       elements:
         - type: text

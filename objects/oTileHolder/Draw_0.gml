@@ -1,4 +1,6 @@
 if(layer == layer_get_id("Hand_Tile_Holders")){exit;}
+image_xscale = 1;
+image_yscale = 1;
 draw_self();
 
 //if tile is on board, draw its multiplier

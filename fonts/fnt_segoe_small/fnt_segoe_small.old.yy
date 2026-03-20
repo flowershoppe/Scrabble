@@ -722,5 +722,5 @@
     "path":"texturegroups/Default",
   },
   "TTFName":"",
-  "usesSDF":false,
+  "usesSDF":true,
 }

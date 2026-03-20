@@ -61,8 +61,6 @@ if(oCursor.held_tile == noone and oCamera.dragging == false)
 	
 	if(grabbable and _intersect)
 	{
-		image_xscale = 1.15;
-		image_yscale = 1.15;
 		xscale = 1.15;
 		yscale = 1.15;
 		hover = true;
@@ -79,8 +77,6 @@ if(oCursor.held_tile == noone and oCamera.dragging == false)
 		{
 			//layer = true_layer;	
 		}
-		image_xscale = 1;
-		image_yscale = 1;
 		xscale = 1;
 		yscale = 1;
 		hover = false;
@@ -88,8 +84,6 @@ if(oCursor.held_tile == noone and oCamera.dragging == false)
 }
 else
 {
-	image_xscale = 1;
-	image_yscale = 1;
 	xscale = 1;
 	yscale = 1;
 	hover = false;	

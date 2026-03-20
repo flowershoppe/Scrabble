@@ -13,7 +13,7 @@ root:
     - type: button
       border_thickness: 0
       padding: 0
-      size: {w: 32, h: 32}
+      size: {w: 64, h: 64}
       canvas:
         top: 15
         left: 15
@@ -29,14 +29,14 @@ root:
     - type: text
       text: @@'Floor - ' + ~oRun.stage
       canvas:
-        top: 22
-        left: 100
+        top: 44
+        left: 200
     - type: panel
       layout: horizontal
       spacing: 5
       canvas:
-        top: 22
-        left: 200
+        top: 44
+        left: 400
       elements:
         - type: text
           text: Mytes - 
@@ -46,20 +46,20 @@ root:
       layout: horizontal
       spacing: 5
       canvas:
-        top: 22
-        left: 420
+        top: 44
+        left: 840
       elements:
         - type: text
           text: @@ ~oGame.cheat then '!CHEAT ON!' else ''
     - type: text
       text: Run Length - 
       canvas:
-        top: 22
-        right: 175
+        top: 44
+        right: 350
     - type: text
       text: ~oRun.length
       canvas:
-        top: 22
-        left: 790
+        top: 44
+        left: 1580
 
 

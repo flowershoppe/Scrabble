@@ -11,12 +11,13 @@ root:
 
   elements:
     - type: panel
+      size: {w: 400, h: 435}
       alignment: { h: center }
       theme: menu
       canvas:
         top: 5
         center: h      
-      padding: 15    
+      padding: 30    
       indexed: true
       background: ~spPanel
       elements:

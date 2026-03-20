@@ -15,8 +15,17 @@ if(wait_for_input)
 if(on_board){exit;}
 
 //draw self
+if(hover)
+{
+	image_xscale = 2.3;
+	image_yscale = 2.3;
+}
+else
+{
+	image_xscale = 2;
+	image_yscale = 2;
+}
 draw_self();
-
 
 if(selected)
 {
@@ -31,10 +40,9 @@ draw_set_valign(fa_middle);
 draw_set_font(font);
 
 //draw letter
-draw_text_transformed_color(x - _x_offset, y - _y_offset, letter, xscale, yscale, 
+draw_text_transformed_color(x - _x_offset, y - _y_offset, letter, xscale * 2, yscale * 2, 
 							image_angle, font_color, font_color, font_color, font_color, 100);
 
-var _scale = (font_scale / 3) + (xscale - 1);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
@@ -44,11 +52,17 @@ _y_offset = (sprite_height * yscale) * 0.3;
 //draw point value	
 if(pointvalue > global.letters[? letter])
 {
+	font_color = c_green;
+}
+if(pointvalue < global.letters[? letter])
+{
 	font_color = c_red;
 }
+
+var _scale = (font_scale / 3) * image_xscale;
 draw_text_transformed_color(
-    x + lengthdir_x(cornerNumDist, cornerNumDir + image_angle) * xscale,
-    y + lengthdir_y(cornerNumDist, cornerNumDir + image_angle) * yscale,
+    x + lengthdir_x(cornerNumDist * 2, cornerNumDir + image_angle) * xscale,
+    y + lengthdir_y(cornerNumDist * 2, cornerNumDir + image_angle) * yscale,
     pointvalue, _scale, _scale, image_angle, font_color, font_color, font_color, font_color, 100);
 
 draw_set_halign(_old_halign);
