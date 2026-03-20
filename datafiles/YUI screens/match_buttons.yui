@@ -12,10 +12,10 @@ root:
     - type: panel
       is_cursor_layer: true
       layout: vertical
-      size: {w: 175, h: 175}
+      size: {w: 350, h: 350}
       canvas:
         right: 0
-        top: 260
+        top: 520
       background: ~spPanel
       alignment: center
       padding: 10

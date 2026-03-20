@@ -4,15 +4,18 @@ empty = false;
 
 spr = spPanel;
 if(room == rGame)
-{
-	spr_w = 800;
-	spr_h = 105;
+{		
+	x = display_get_gui_width() / 2
+	y = display_get_gui_height() - (sprite_get_height(global.hand_sprite) / 2);
+	spr_w = 1600;
+	spr_h = 210;
 }
 else
 {
-	spr_w = 525;
-	spr_h = 105;
+	spr_w = 1050;
+	spr_h = 210;
 }
+
 
 inc = 0;
 interval = 10;

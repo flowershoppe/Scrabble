@@ -1,4 +1,4 @@
-var _scale = 960 / 1920;
+var _scale = 1920 / 1920;
 
 draw_sprite_ext(spr, 0, 0, 0, _scale, _scale, 0, c_white, 1);
 

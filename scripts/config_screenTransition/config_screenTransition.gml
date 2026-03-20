@@ -43,7 +43,7 @@
 /////////////////////
 
 // Out //
-#macro DEFAULT_TSCALE_SPEED_0  .1						// Start speed of animation out | higher = faster | >=1 does nothing
+#macro DEFAULT_TSCALE_SPEED_0  .99					// Start speed of animation out | higher = faster | >=1 does nothing
 #macro DEFAULT_TSCALE_ACCEL_0  -.001					// Amount animation speed changes by each frame out | negative speeds it up, positive slows it down
 #macro DEFAULT_TSCALE_X_0	   (DEFAULT_WIDTH / 2)		// Middle of animation, X, Out
 #macro DEFAULT_TSCALE_Y_0	   (DEFAULT_HEIGHT / 2)		// Middle of animation, Y, Out
@@ -64,7 +64,7 @@
 
 // Out //
 #macro DEFAULT_CHECKER_SIZE			  64		// Max size of squares, should be divisible by both width and height of transition area or else it will be rounded to nearest
-#macro DEFAULT_CHECKER_SPEED_0		  .25 		// Speed of checker scale change per frame | higher = faster | anything above 1 does nothing | 1 is instant
+#macro DEFAULT_CHECKER_SPEED_0		  .99		// Speed of checker scale change per frame | higher = faster | anything above 1 does nothing | 1 is instant
 #macro DEFAULT_CHECKER_DELAY_0		  3			// Frames between checker groups animating
 #macro DEFAULT_CHECKER_FADE_SQUARE_0  false		// Will the square change opacity during the animation?
 #macro DEFAULT_CHECKER_FADE_BG_0	  true		// Will the background fade to a color during the animation?

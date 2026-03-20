@@ -16,22 +16,22 @@ root:
       alignment: center
       canvas:
         center: h
-        top: 75
+        top: 150
       layout: grid
-      padding: [15, 15, 15, 15]
+      padding: [30, 30, 30, 30]
       grid:
         rows: 10
-        row_height: 25
-        row_spacing: 5
+        row_height: 50
+        row_spacing: 10
         columns: 10
-        column_width: 25
-        column_spacing: 5
+        column_width: 50
+        column_spacing: 10
       background: ~spPanel
       elements: @yui_tiles
       template:
         type: panel
         layout: canvas
-        size: 25
+        size: 50
         background: ~oGame.tile_sprite
         elements:
           - type: text

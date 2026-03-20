@@ -49,8 +49,8 @@ global.consonants = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P",
 //Settings
 global.camera_speed = 5.0;
 global.zoom_factor = 0.1;
-global.display_width = 960;
-global.display_height = 540;
+global.display_width = 1920;
+global.display_height = 1080;
 global.min_zoom = 540;
 global.max_zoom = room_height;
 global.maincam = view_camera[0];
@@ -124,13 +124,13 @@ global.hand_sprite = spPlank;
 #region
 global.stMainMenu = 
 {
-	yui_file: "YUI/main_menu.yui",
+	yui_file: "YUI screens/main_menu.yui",
 	data_context: oMainMenu,
 	is_full_screen: false,
-	image_xscale: 4,
-	image_yscale: 4.5,
-	x: 352,
-	y: 224
+	image_xscale: 8,
+	image_yscale: 9,
+	x: 704,
+	y: 448
 }
 global.stPauseMenu =
 {
@@ -155,11 +155,11 @@ global.stCharms =
 	data_context : oCharmManager,
 	yui_file : "YUI screens/charms.yui",
 	is_full_screen : false,
-	image_xscale : 2.5,
-	image_yscale : 4.5,
+	image_xscale : 5,
+	image_yscale : 9,
 	persistent : true,
 	x : 0,
-	y : 64,
+	y : 128,
 	layer : layer_get_id("YUI")
 }
 global.stSettings =

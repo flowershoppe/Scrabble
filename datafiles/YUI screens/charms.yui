@@ -13,14 +13,14 @@ root:
   is_cursor_layer: true
   theme: default
   layout: grid
-  padding: [15, 15, 15, 15]
+  padding: [30, 30, 30, 30]
   grid:
     rows: 5
-    row_height: 40
-    row_spacing: 16
+    row_height: 80
+    row_spacing: 32
     columns: 1
-    column_width: 40
-    column_spacing: 16
+    column_width: 80
+    column_spacing: 32
   background: ~spPanel
   elements: @charms
   template:

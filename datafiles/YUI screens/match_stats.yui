@@ -12,10 +12,10 @@ root:
     - type: panel
       is_cursor_layer: true
       canvas:
-        top: 60
+        top: 125
         right: 0
       layout: vertical
-      size: {w: 175, h: 200}
+      size: {w: 350, h: 400}
       alignment: {h: center}
       background: ~spPanel
       theme: elektra light

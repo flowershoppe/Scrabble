@@ -42,7 +42,7 @@ var _newX = lerp(_viewX, _gotoX, 0.1);
 var _newY = lerp(_viewY, _gotoY, 0.1);
 camera_set_view_pos(global.maincam, _newX, _newY);
 
-var _factor = 0.3;
+var _factor = 0.1;
 var _mouseW = input_check("zoom_out") - input_check("zoom_in")
 if(_mouseW != 0)
 {
@@ -50,7 +50,7 @@ if(_mouseW != 0)
 }
 zoomF = clamp(zoomF + (_mouseW * _factor), _factor, 2);
 
-var _lerpH = lerp(_viewH, zoomF * 540, _factor);
+var _lerpH = lerp(_viewH, zoomF * 1080, _factor);
 var _newH = clamp(_lerpH, 0, room_height);var _newW = _newH * (960 / 540);
 camera_set_view_size(global.maincam, _newW, _newH);
 

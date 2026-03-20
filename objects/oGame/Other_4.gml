@@ -8,7 +8,9 @@ switch(room)
 {        		
 	case rMainMenu:	
 		oCamera.active = false;
-		YuiCursorManager.is_navigation_active = false
+		instance_create_layer(global.stMainMenu.x, global.stMainMenu.y, "YUI", yui_document,
+																		global.stMainMenu);											
+		YuiCursorManager.is_navigation_active = true;
 		if(!audio_is_playing(global.music_main_menu))
 		{
 			audio_stop_sound(global.music);

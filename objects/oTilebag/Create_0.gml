@@ -5,7 +5,7 @@ yui_tiles = tiles;
 
 last_tile = noone;
 
-spr = spBag;
+spr = spTilebag;
 
 //contents window
 bag_menu = noone;
