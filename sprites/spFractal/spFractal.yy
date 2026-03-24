@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spFractal",
   "bboxMode":0,
-  "bbox_bottom":39,
+  "bbox_bottom":79,
   "bbox_left":0,
-  "bbox_right":39,
+  "bbox_right":79,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"c347c629-93b4-4ede-a507-571a26cf6589","name":"c347c629-93b4-4ede-a507-571a26cf6589","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"68a48145-5a9f-4c25-9a8c-d7575c81cbbb","name":"68a48145-5a9f-4c25-9a8c-d7575c81cbbb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":40,
+  "height":80,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"be41248b-8493-4aee-9133-a39266ebafe2","blendMode":0,"displayName":"default","isLocked":false,"name":"be41248b-8493-4aee-9133-a39266ebafe2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"fefe33f1-06b2-46ac-a952-4bc01b2d6616","blendMode":0,"displayName":"default","isLocked":false,"name":"fefe33f1-06b2-46ac-a952-4bc01b2d6616","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spFractal",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c347c629-93b4-4ede-a507-571a26cf6589","path":"sprites/spFractal/spFractal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c3deb87a-f110-4655-8160-73c00c3c3aa7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68a48145-5a9f-4c25-9a8c-d7575c81cbbb","path":"sprites/spFractal/spFractal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b0ae72ac-be58-421f-906f-95959a6b6648","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":40,
+  "width":80,
 }

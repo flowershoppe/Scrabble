@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spMetalDetector",
   "bboxMode":0,
-  "bbox_bottom":39,
-  "bbox_left":1,
-  "bbox_right":36,
+  "bbox_bottom":79,
+  "bbox_left":3,
+  "bbox_right":74,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"88f7925a-5a7b-4017-83ba-3593658c6342","name":"88f7925a-5a7b-4017-83ba-3593658c6342","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"16e27ff9-4b23-4653-ae55-f376a6898d88","name":"16e27ff9-4b23-4653-ae55-f376a6898d88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":40,
+  "height":80,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"958c240a-8d97-47cb-a7fa-6bc72088fb85","blendMode":0,"displayName":"default","isLocked":false,"name":"958c240a-8d97-47cb-a7fa-6bc72088fb85","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"dc142ccb-943f-40ab-a97d-df4ddbc8cfc9","blendMode":0,"displayName":"default","isLocked":false,"name":"dc142ccb-943f-40ab-a97d-df4ddbc8cfc9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spMetalDetector",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"88f7925a-5a7b-4017-83ba-3593658c6342","path":"sprites/spMetalDetector/spMetalDetector.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"249074f9-b980-43af-bcb8-b58f81e25329","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16e27ff9-4b23-4653-ae55-f376a6898d88","path":"sprites/spMetalDetector/spMetalDetector.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1a20d80b-403c-42d7-906d-c369420b8713","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":40,
+  "width":80,
 }

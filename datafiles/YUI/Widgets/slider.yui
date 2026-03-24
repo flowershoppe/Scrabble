@@ -15,13 +15,13 @@ resources:
       on_value_changed: null
       on_drag_end: null
       show_value: true
-      slider_size: { h: 20, w: 100 }
-      thumb_size: { h: 20, w: 10, min_w: 10 }
-      wheel_increment: 4
+      slider_size: { h: 40, w: 200 }
+      thumb_size: { h: 40, w: 20, min_w: 20 }
+      wheel_increment: 1
 
       orientation: horizontal
       thumb_background: grey
-      line_color: white
+      line_color: grey
 
     template:
 

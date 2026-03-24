@@ -17,13 +17,13 @@ root:
       canvas:
         center: true
       background: ~spPanel
-      size: {w: 225, h: 300}
-      padding: 10
+      size: {w: 450, h: 600}
+      padding: 20
       theme: elektra light
       elements:
         - type: image
           sprite: ~spLoser
-          size: 128
+          size: 256
         - type: text
           text: @@ 'Total Score - ' + @total_score
         - type: text
@@ -39,7 +39,7 @@ root:
             type: text
             text: Main Menu
             text_style: subtitle
-          border_thickness: 1
+          border_thickness: 0
           on_click: 
             - ~goto_mainmenu()
             - ~audio_play_sound_on(~oGame.emitter_SE, ~sdBack, false, 1)

@@ -18,8 +18,8 @@ root:
       layout: canvas
       theme: elektra
       canvas:
-        top: 15
-        left: 15
+        top: 30
+        left: 30
       elements:
         - type: button
           background: ~spButton
@@ -42,17 +42,17 @@ root:
           flex: true
           size: stretch
           alignment: { h: center }
-          padding: 50
-          spacing: 25
+          padding: 100
+          spacing: 30
           elements:
             - type: panel
               layout: canvas
               alignment: {v: center}
-              size: {w: 250, h: 64}
+              size: {w: 500, h: 128}
               spacing: 25
               elements:                
                 - type: panel
-                  size: {w: 175, h: 64}
+                  size: {w: 350, h: 128}
                   layout: vertical
                   alignment: center
                   elements:
@@ -60,7 +60,7 @@ root:
                       text: Tile Font
                       text_style: subtitle
                     - type: dropdown_menu
-                      size: {w: 175}
+                      size: {w: 275}
                       item_template: @name
                       can_clear_value: false
                       items: ~oGame.fonts
@@ -74,8 +74,8 @@ root:
                   background: ~oGame.tile_sprite
                   theme: dark
                   canvas:
-                    right: 5
-                    top: 5
+                    right: 64
+                    top: 32
                   elements:
                     - type: text
                       font: ~oGame.tile_font
@@ -83,10 +83,48 @@ root:
                       text: A
                       text_style: title
                     - type: text
-                      font: ~oGame.tile_font_small
+                      font: ~oGame.tile_font_tiny
                       text: 1
                       canvas:
-                        right: 2  
+                        right: 5
+                - type: panel
+                  layout: canvas
+                  size: 64
+                  background: ~oGame.tile_sprite
+                  theme: dark
+                  canvas:
+                    right: 0
+                    top: 32
+                  elements:
+                    - type: text
+                      font: ~oGame.tile_font
+                      alignment: center
+                      text: B
+                      text_style: title
+                    - type: text
+                      font: ~oGame.tile_font_tiny
+                      text: 3
+                      canvas:
+                        right: 5
+                - type: panel
+                  layout: canvas
+                  size: 64
+                  background: ~oGame.tile_sprite
+                  theme: dark
+                  canvas:
+                    right: -64
+                    top: 32
+                  elements:
+                    - type: text
+                      font: ~oGame.tile_font
+                      alignment: center
+                      text: C
+                      text_style: title
+                    - type: text
+                      font: ~oGame.tile_font_tiny
+                      text: 3
+                      canvas:
+                        right: 5
             - type: panel
               layout: vertical
               alignment: { h: center }              
@@ -96,7 +134,7 @@ root:
                   text_style: subtitle
                 - type: dropdown_menu
                   items: @resolution_items
-                  size: {w: 150}
+                  size: {w: 275}
                   can_clear_value: false
                   selection_scope: @resolution_selector
                   on_item_selected:
@@ -111,7 +149,7 @@ root:
                   text: Master Volume   
                   text_style: subtitle  
                 - type: slider
-                  line_color: grey
+                  line_color: black
                   min: 0
                   max: 100
                   value: @@ ~audio_get_master_gain() * 100
@@ -127,7 +165,7 @@ root:
                   text: Music Volume 
                   text_style: subtitle 
                 - type: slider
-                  line_color: grey
+                  line_color: black
                   min: 0
                   max: 100
                   value: @@ ~audio_emitter_get_gain(~oGame.emitter_MS) * 100
@@ -143,7 +181,7 @@ root:
                   text: Sound Effects Volume  
                   text_style: subtitle
                 - type: slider
-                  line_color: grey
+                  line_color: black
                   min: 0
                   max: 100
                   value: @@ ~audio_emitter_get_gain(~oGame.emitter_SE) * 100
@@ -153,18 +191,35 @@ root:
             - type: panel
               layout: horizontal
               alignment: center
-              spacing: 10
+              spacing: 20
               elements:
                 - type: text
                   text: Dialogue
                   text_style: subtitle
                 - type: button
                   border_thickness: 0
-                  size: 32
+                  size: 64
                   content: " "
                   background: @play_dialogue then ~spConfirm else ~spCancel
                   on_click: 
                     - @play_dialogue = not @play_dialogue
+                    - ~save_settings()
+                    - ~audio_play_sound_on(~oGame.emitter_SE, ~sdSelect, false, 1)
+            - type: panel
+              layout: horizontal
+              alignment: center
+              spacing: 20
+              elements:
+                - type: text
+                  text: Run Timer
+                  text_style: subtitle
+                - type: button
+                  border_thickness: 0
+                  size: 64
+                  content: " "
+                  background: @show_timer then ~spConfirm else ~spCancel
+                  on_click: 
+                    - @show_timer = not @show_timer
                     - ~save_settings()
                     - ~audio_play_sound_on(~oGame.emitter_SE, ~sdSelect, false, 1)
 
@@ -176,8 +231,8 @@ root:
           theme: elektra light
           alignment: center
           background: ~spPanel
-          padding: 50
-          spacing: 25
+          padding: 100
+          spacing: 50
           elements: 
             - type: text
               text: Keybinds
@@ -187,15 +242,15 @@ root:
               text_style: body
             - type: panel
               layout: horizontal
-              spacing: 20
+              spacing: 40
               elements:
                 - type: panel
                   layout: horizontal
-                  spacing: 25
+                  spacing: 50
                   elements:
                     - type: panel
-                      padding: 5
-                      spacing: 16
+                      padding: 10
+                      spacing: 27
                       elements: @verbs
                       template:
                         type: panel
@@ -213,7 +268,7 @@ root:
                         elements:
                           - type: button
                             alignment: { h: right }
-                            size: { w: 200, h: 30 }
+                            size: { w: 400, h: 60 }
                             content:
                               type: text
                               text: @@ ~input_binding_get(@)

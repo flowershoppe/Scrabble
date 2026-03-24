@@ -9,7 +9,7 @@
 
 // whether gamepad/keyboard navigation is active by default
 // (can still be toggled at runtime by setting YuiCursorManager.is_navigation_active)
-#macro YUI_DEFAULT_IS_NAVIGATION_ACTIVE false
+#macro YUI_DEFAULT_IS_NAVIGATION_ACTIVE true
 
 // whether YUI should call yui_do_live_reload when the F5 key is pressed
 // (set this to false if you want to trigger live reload yourself)

@@ -34,9 +34,11 @@ function YuiButtonElement(_props, _resources, _slot_values) : YuiBaseElement(_pr
 	// fix up button.on_click to be handled by event system
 	if props.on_click != undefined {
 		props.events ??= {};
-		/*if struct_exists(props.events, "on_click")
-			throw yui_error("button: on_click was defined in both on_click and events.on_click");*/
-			
+		if struct_exists(props.events, "on_click")
+			yui_warning($"button: on_click was defined in both on_click and events.on_click in {props.id}");
+		
+		// shallow copy the events before modifying it
+		props.events = variable_clone(props.events, 0);
 		props.events.on_click = props.on_click;
 	}
 	

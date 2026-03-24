@@ -63,7 +63,7 @@
 //////////////
 
 // Out //
-#macro DEFAULT_CHECKER_SIZE			  64		// Max size of squares, should be divisible by both width and height of transition area or else it will be rounded to nearest
+#macro DEFAULT_CHECKER_SIZE			  128		// Max size of squares, should be divisible by both width and height of transition area or else it will be rounded to nearest
 #macro DEFAULT_CHECKER_SPEED_0		  .99		// Speed of checker scale change per frame | higher = faster | anything above 1 does nothing | 1 is instant
 #macro DEFAULT_CHECKER_DELAY_0		  3			// Frames between checker groups animating
 #macro DEFAULT_CHECKER_FADE_SQUARE_0  false		// Will the square change opacity during the animation?

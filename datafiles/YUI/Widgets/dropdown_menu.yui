@@ -69,7 +69,7 @@ resources:
           - type: border
             padding: [5, 0, 5, 0]
             data_source: $selected_item ?? $selection_scope?.selected_item
-            flex: true
+            //flex: true
             content: $item_template
 
           - type: button
@@ -78,7 +78,7 @@ resources:
               color: $theme.resources.negative_color
               text: X
             padding: [5, 0]
-            background: rgba(73, 73, 73, 0)
+            background: #00000000
             border_thickness: 0
             visible: $can_clear_value and ($selected_item != undefined or $selection_scope?.selected_index >= 0)
             on_click:
@@ -86,6 +86,7 @@ resources:
               - @@ $selection_scope?.select(undefined)
               // invoke the user handler
               - @@ $on_item_selected?(undefined)
+
           - $indicator_template
 
       popup:

@@ -31,6 +31,7 @@
     {"$GMObjectProperty":"v2","%Name":"window_height","filters":[],"listItems":[],"multiselect":false,"name":"window_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"540","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"isfullscreen","filters":[],"listItems":[],"multiselect":false,"name":"isfullscreen","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"play_dialogue","filters":[],"listItems":[],"multiselect":false,"name":"play_dialogue","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"show_timer","filters":[],"listItems":[],"multiselect":false,"name":"show_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -14,9 +14,9 @@ constants:
 
   tint_color: #ffffff
   //accent_color: #AA00AA
-  accent_color: #ffffffff
+  accent_color: #e3008c
   lum_factor: 1
-  accent_lum: 1
+  accent_lum: -0.5
 
   // tint_color: #33FF33
   // accent_color: #00ff00
@@ -51,9 +51,6 @@ theme:
 
   // overrides default values for the specified element
   elements:
-
-    main_panel:
-      background: &panel_bg
 
     // === widgets ===
 
@@ -152,15 +149,6 @@ theme:
       padding: [10, 5]
 
     popup:
-      // animate:
-      //   on_visible:
-      //     opacity: curveExpoInv
-        // on_unloading:
-        //   opacity:
-        //     type: curve
-        //     curve: curveLinear
-        //     duration: 200
-        //     end: 0
       background: &control_border
       border_color: &focus_border
       border_thickness: 1
@@ -168,16 +156,16 @@ theme:
 
   // used for text.text_style (or text_input.text_style) to set the font and color
   // this enables you to adjust style values in one place rather than in each text element
-   text_styles:
+  text_styles:
 
     title:
-      font: ~fnt_reality_hyper_big
+      font: ~fnt_yui_title
       color: &text_color
 
     subtitle:
-      font: ~fnt_reality_hyper
+      font: ~fnt_yui_subtitle
       color: &text_color
 
     body:
-      font: ~fnt_reality_hyper_small
+      font: ~fnt_yui_body
       color: &text_color

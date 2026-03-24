@@ -19,9 +19,9 @@ root:
       elements:
         - type: panel
           layout: canvas
-          size: {w: 350, h: 350}
+          size: {w: 700, h: 700}
           background: ~spPanel
-          padding: 10
+          padding: 20
           elements:
             - type: button
               theme: elektra
@@ -36,7 +36,7 @@ root:
                 - ~audio_play_sound_on(~oGame.emitter_SE, ~sdBack, false, 1)
             - type: panel
               alignment: center
-              spacing: 10
+              spacing: 20
               elements:
                 - type: panel
                   layout: horizontal

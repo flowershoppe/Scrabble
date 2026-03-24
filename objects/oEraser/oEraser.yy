@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"speraser",
-    "path":"sprites/speraser/speraser.yy",
+    "name":"spEraser",
+    "path":"sprites/spEraser/spEraser.yy",
   },
   "spriteMaskId":null,
   "visible":true,

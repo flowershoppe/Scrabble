@@ -18,20 +18,22 @@ root:
       canvas:
         center: true
       background: ~spPanel
-      size: {w: 600, h: 500}
+      size: {w: 1000, h: 800}
       elements:
         - type: panel
           canvas:
-            top: 50
-          size: {w: 350, h: 350}
+            top: 100
+          size: {w: 700, h: 700}
           elements:
             - type: image
               sprite: ~spWinner
         - type: panel
           canvas:
-            right: 60
-            top: 200
+            right: 75
+            center: v
           elements:
+            - type: text
+              text: FINAL RESULT
             - type: text
               text: @@ 'Total Score | ' + @total_score
             - type: text
@@ -46,13 +48,13 @@ root:
           theme: elektra
           background: ~spButton
           canvas: 
-            bottom: 50
-            right: 200
+            bottom: 100
+            center: h
           content:
             type: text
             text: Main Menu
             text_style: subtitle
-          border_thickness: 1
+          border_thickness: 0
           on_click: 
             - ~goto_mainmenu()
             - ~audio_play_sound_on(~oGame.emitter_SE, ~sdSelect, false, 1)

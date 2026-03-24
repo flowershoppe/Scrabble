@@ -1,5 +1,5 @@
-var _x = view_get_wport(0) / 2;
-var _y = view_get_hport(0) / 3;
+var _x = display_get_gui_width() / 2;
+var _y = display_get_gui_height() / 3;
 if(typist != 0)
 {	
 	if(oRun.stage >= oRun.stage_count and oRun.current_level == oRun.levels[array_length(oRun.levels) - 1])

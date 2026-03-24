@@ -19,13 +19,13 @@ root:
       padding: 10
       canvas:
         center: true
-      size: {w: 600, h: 325}
+      size: {w: 1200, h: 650}
       elements: 
         - type: panel
           layout: horizontal
           alignment: center
           canvas:
-            top: 125
+            top: 250
           elements:
             - type: panel
               layout: vertical
@@ -42,20 +42,20 @@ root:
                   text: and changes inventory between floors
         - type: panel
           theme: dark
-          padding: 10
-          spacing: 20
+          padding: 20
+          spacing: 40
           alignment: center
           layout: horizontal
           elements: @tiles
           template:
             type: panel
             layout: canvas
-            size: 64
+            size: 128
             elements: 
               - type: panel
                 visible: @ != undefined
                 layout: canvas
-                size: 64  
+                size: 128  
                 events:
                   on_click: 
                     - ~purchase(@)
@@ -71,10 +71,10 @@ root:
                     font: ~oGame.tile_font_small
                     text: @pointvalue ?? 0
                     canvas:
-                      right: 2
+                      right: 8
                     color: ~isGreater(@letter, @pointvalue) then red else black
                   - type: image
-                    size: 100 
+                    size: 200 
                     visible: @ != undefined
                     sprite: @spr ?? ~spHolder
                   - type: panel
@@ -82,8 +82,8 @@ root:
                     layout: canvas
                     canvas:
                       bottom: 0
-                      right: 14
-                    size: 16
+                      right: 28
+                    size: 32
                     elements:
                       - type: text
                         font: ~fnt_elektra_small
@@ -96,52 +96,53 @@ root:
                         text: ~oShop.price_tile
                         text_style: subtitle
                         canvas:
-                          left: 2
-                          top: 2
+                          left: 4
+                          top: 4
                   - type: panel
                     visible: @ != undefined
                     layout: canvas
                     canvas:
                       bottom: -4
-                      right: -12
-                    size: 18
+                      right: -24
+                    size: 36
                     elements: 
                       - type: image
                         sprite: ~spMyte
-                        size: 14
+                        size: 28
                         blend_color: yellow
                       - type: image
                         sprite: ~spMyte
                         blend_color: black
-                        size: 14
+                        size: 28
                         canvas:
-                          left: 2
-                          top: 2
+                          left: 4
+                          top: 4
               - type: image
                 sprite: ~spShadow
+                size: 200
                 canvas:
-                  bottom: -15
+                  bottom: -30
         - type: panel
-          padding: 10
-          spacing: 20
+          padding: 20
+          spacing: 40
           alignment: center
           layout: horizontal
           elements: @charms
           template:
             type: panel
             layout: canvas
-            size: 64
+            size: 128
             elements:
               - type: panel
                 visible: @ != undefined
                 layout: canvas
-                size: 64
+                size: 128
                 elements:
                   - type: image
                     visible: @ != undefined
-                    size: 64
+                    size: 128
                     tooltip: @name + ~chr(13) + @description
-                    tooltip_width: 250
+                    tooltip_width: 500
                     sprite: @spr ?? ~spHolder
                     blend_color: @color ?? white
                     events:
@@ -152,8 +153,8 @@ root:
                     layout: canvas
                     canvas:
                       bottom: 0
-                      right: 14
-                    size: 16
+                      right: 28
+                    size: 32
                     elements:
                       - type: text
                         font: ~fnt_elektra_small
@@ -166,36 +167,37 @@ root:
                         text: ~oShop.price_charm
                         text_style: subtitle
                         canvas:
-                          left: 2
-                          top: 2
+                          left: 4
+                          top: 4
                   - type: panel
                     visible: @ != undefined
                     layout: canvas
                     canvas:
-                      bottom: -4
-                      right: -12
-                    size: 18
+                      bottom: -8
+                      right: -24
+                    size: 36
                     elements: 
                       - type: image
                         sprite: ~spMyte
-                        size: 14
+                        size: 28
                         blend_color: yellow
                       - type: image
                         sprite: ~spMyte
                         blend_color: black
-                        size: 14
+                        size: 28
                         canvas:
-                          left: 2
-                          top: 2
+                          left: 4
+                          top: 4
               - type: image
                 sprite: ~spShadow
+                size: 200
                 canvas:
-                  bottom: -10
+                  bottom: -20
     - type: panel
       theme: elektra
       canvas:
-        right: 200
-        bottom: 125
+        right: 400
+        bottom: 250
       elements:
         - type: button
           background: ~spButton
@@ -209,8 +211,8 @@ root:
     - type: panel
       theme: elektra
       canvas:
-        left: 200
-        bottom: 125
+        left: 400
+        bottom: 250
       elements:
         - type: button
           background: ~spButton
@@ -222,18 +224,18 @@ root:
             - ~refresh_shop(5)
     - type: panel
       layout: vertical
-      size: {w: 70, h: 128}
+      size: {w: 140, h: 256}
       canvas:
-        right: 50
-        bottom: 10
+        right: 100
+        bottom: 20
       elements:
         - type: panel
           layout: canvas
-          size: 64
+          size: 128
           elements:
             - type: image
               sprite: ~spRecycleBin
-              size: 64
+              size: 128
               interactions:
                 - sell_charm.drop
         - type: text
