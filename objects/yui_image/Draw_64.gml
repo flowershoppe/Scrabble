@@ -1,6 +1,5 @@
 /// @description
-if trace
-    yui_break();
+
 // skip rendering if we don't have a sprite
 if sprite_index < 0
 	return;

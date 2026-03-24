@@ -199,9 +199,6 @@ build = function yui_panel__build() {
 
 				// track it in our internal children array
 				internal_children[i] = child;
-				if (child == undefined) {
-				  throw "debug"
-				}
 			}
 			i++;
 		}

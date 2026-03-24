@@ -13,10 +13,10 @@ root:
     - type: button
       border_thickness: 0
       padding: 0
-      size: {w: 64, h: 64}
+      size: {w: 80, h: 80}
       canvas:
-        top: 15
-        left: 15
+        top: 25
+        left: 25
       autofocus: false
       content:
         type: image
@@ -52,12 +52,12 @@ root:
         - type: text
           text: @@ ~oGame.cheat then '!CHEAT ON!' else ''
     - type: text
-      text: Run Length - 
+      text: ~oSettings.show_timer then 'Run Length - ' else ""
       canvas:
         top: 44
         right: 350
     - type: text
-      text: ~oRun.length
+      text: ~oSettings.show_timer then ~oRun.length else ""
       canvas:
         top: 44
         left: 1580

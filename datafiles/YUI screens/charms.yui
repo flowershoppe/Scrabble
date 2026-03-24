@@ -31,9 +31,9 @@ root:
         interaction: sell_charm
         
     angle: @image_angle ?? 0
-    size: 40
+    size: 80
     theme: elektra light
     tooltip: @name + ~chr(13) + @description
-    tooltip_width: 250
+    tooltip_width: 500
     sprite: @sprite_index ?? ~spHolder
     blend_color: @color ?? white

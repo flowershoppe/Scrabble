@@ -28,14 +28,19 @@ active_region = undefined;
 override_text = undefined;
 
 onLayoutInit = function() {
+	use_scribble = layout_props.use_scribble;
+	
 	text_value = new YuiBindableValue(yui_element.text, yui_element.getDefaultAnim("text"));
 	animatable.text = text_value;
 	
 	color_value = new YuiBindableValue(yui_element.color, yui_element.getDefaultAnim("color"));
 	animatable.color = color_value;
 	
+	// NOTE: currently scribble only
+	angle_value = new YuiBindableValue(yui_element.angle, yui_element.getDefaultAnim("angle"));
+	animatable.angle = angle_value;
+	
 	highlight_color = layout_props.highlight_color;
-	use_scribble = layout_props.use_scribble;
 	
 	regions = layout_props.regions;
 }
@@ -45,10 +50,16 @@ build = function() {
 	font = bound_values.font;
 		
 	if use_scribble {
+		var font_name = is_string(font) ? font : font_get_name(font);
 		formatted_text = override_text ?? bound_values.text
 		scribble_element = scribble(formatted_text, string(id))
-			.starting_format(font_get_name(font))
+			.starting_format(font_name)
+			.transform(1, 1, angle_value.value)
 			.align(layout_props.halign, layout_props.valign);
+			
+		// calc the default unrotated size	
+		var padding = layout_props.padding;
+		var base_bbox = scribble_element.get_bbox(x, y, padding.left, padding.top, padding.right, padding.bottom);
 		
 		if bound_values.typist {
 			typist = bound_values.typist;
@@ -98,13 +109,16 @@ arrange = function yui_text__arrange(available_size, viewport_size) {
 	
 		scribble_element.wrap(padded_rect.w, padded_rect.h);
 		var is_wrapped = scribble_element.get_wrapped();
-		var new_bbox = scribble_element.get_bbox(x, y, padding.left, padding.top, padding.right, padding.bottom);
+		var new_bbox = scribble_element.get_bbox(x, y, padding.left, padding.top, padding.right, padding.bottom);	
+		
+		if trace
+			mx_break();
 
 		desired_size.w = layout_props.halign == fa_center
 			? available_size.w
 			: new_bbox.width;
 		desired_size.h = layout_props.valign == fa_middle
-			? available_size.h
+			? max(available_size.h, new_bbox.height)
 			: new_bbox.height;
 	}
 	else {
@@ -176,7 +190,7 @@ arrange = function yui_text__arrange(available_size, viewport_size) {
 		yui_break()
 	}
 	
-	use_text_surface = font >= 0 && !use_scribble;
+	use_text_surface = !use_scribble and font >= 0;
 	if use_text_surface {
 		
 		var build_surface = true;

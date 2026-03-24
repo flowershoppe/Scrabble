@@ -2,24 +2,24 @@
   "$GMSprite":"v2",
   "%Name":"spWateringCan",
   "bboxMode":0,
-  "bbox_bottom":36,
+  "bbox_bottom":71,
   "bbox_left":0,
-  "bbox_right":39,
-  "bbox_top":3,
+  "bbox_right":79,
+  "bbox_top":8,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3dda05d8-0e32-4fd5-a2bb-fd8413fc078f","name":"3dda05d8-0e32-4fd5-a2bb-fd8413fc078f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3d79cb91-2e58-48e3-ac1f-9097ed3b7020","name":"3d79cb91-2e58-48e3-ac1f-9097ed3b7020","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":40,
+  "height":80,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"17fd9e7b-fbff-4799-b404-b5ccdfe495a3","blendMode":0,"displayName":"default","isLocked":false,"name":"17fd9e7b-fbff-4799-b404-b5ccdfe495a3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3d809dc7-da8c-4de0-833f-bfda51dbcab8","blendMode":0,"displayName":"default","isLocked":false,"name":"3d809dc7-da8c-4de0-833f-bfda51dbcab8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spWateringCan",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3dda05d8-0e32-4fd5-a2bb-fd8413fc078f","path":"sprites/spWateringCan/spWateringCan.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b240f00f-0c2c-46c8-a53a-e8ad602e053f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d79cb91-2e58-48e3-ac1f-9097ed3b7020","path":"sprites/spWateringCan/spWateringCan.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"27184a92-4524-4719-8006-251ca6e76a74","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":40,
+  "width":80,
 }

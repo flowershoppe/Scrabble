@@ -2,24 +2,24 @@
   "$GMSprite":"v2",
   "%Name":"spHeadphones",
   "bboxMode":0,
-  "bbox_bottom":37,
+  "bbox_bottom":75,
   "bbox_left":0,
-  "bbox_right":39,
-  "bbox_top":1,
+  "bbox_right":79,
+  "bbox_top":4,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ee1a7e35-a376-4162-89d2-320200cf3e3c","name":"ee1a7e35-a376-4162-89d2-320200cf3e3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5703f3e1-75b0-4b95-b2d7-871c013955ec","name":"5703f3e1-75b0-4b95-b2d7-871c013955ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":40,
+  "height":80,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4ff56b32-971a-4f0a-9126-6dd6f1a446f6","blendMode":0,"displayName":"default","isLocked":false,"name":"4ff56b32-971a-4f0a-9126-6dd6f1a446f6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"762f43bc-4e0d-411c-9528-0663c18698db","blendMode":0,"displayName":"default","isLocked":false,"name":"762f43bc-4e0d-411c-9528-0663c18698db","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spHeadphones",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ee1a7e35-a376-4162-89d2-320200cf3e3c","path":"sprites/spHeadphones/spHeadphones.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"dbb99733-c138-4d7a-9d7f-744fdd006eec","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5703f3e1-75b0-4b95-b2d7-871c013955ec","path":"sprites/spHeadphones/spHeadphones.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cfd789bc-fd01-4a59-add8-323dc5c9b217","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":40,
+  "width":80,
 }
