@@ -16,8 +16,11 @@ root:
       alignment: center
       indexed: true
       theme: elektra light
+      background: ~spPanel
+      size: {h: 250, w: 900}
+      padding: 30
       canvas:
-        top: 375
+        top: 750
         center: h
       elements:
         - type: panel

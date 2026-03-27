@@ -11,7 +11,7 @@ if (textbox_show) {
   var _spr_width = sprite_get_width(spPanel);
   var _spr_height = sprite_get_height(spPanel);
   //dialogue_background_colour
-  draw_sprite_ext(spPanel, 0, _x_loc, _y_loc, textbox_width / _spr_width, textbox_height / _spr_height,
+  draw_sprite_ext(spPanel, 0, _x_loc, _y_loc, (textbox_width * 1.1) / _spr_width, (textbox_height * 1.1) / _spr_height,
 				0, c_white, dialogue_gui_fader);
 }
 

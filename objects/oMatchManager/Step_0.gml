@@ -129,7 +129,7 @@ for(i = 0; i < array_length(_player_tiles); i++)
 			}
 			ds_list_destroy(_list);
 		}
-			
+		if(_tile == _next_tile){_tile = noone; break;}
 		_tile = _next_tile;
 	}
 		
@@ -170,6 +170,7 @@ for(i = 0; i < array_length(_player_tiles); i++)
 				if(!_next_tile.on_board){ _next_tile = noone; }
 			}
 		}
+		if(_tile == _next_tile){_tile = noone; break;}
 		_tile = _next_tile;
 			
 		if(_tile != noone)
@@ -233,14 +234,16 @@ for(i = 0; i < array_length(_player_tiles); i++)
 					_next_tile = noone;
 				}
 			}
+			
 			if(_num < 1){_next_tile = noone;}
 			if(_next_tile != noone)
 			{
 				if(!_next_tile.on_board){ _next_tile = noone; }
 			}
 		}
-			
+		if(_tile == _next_tile){_tile = noone; break;}
 		_tile = _next_tile;
+		
 	}
 		
 	//reset tile
@@ -280,6 +283,7 @@ for(i = 0; i < array_length(_player_tiles); i++)
 				if(!_next_tile.on_board){ _next_tile = noone; }
 			}
 		}
+		if(_tile == _next_tile){_tile = noone; break;}
 		_tile = _next_tile;
 			
 		if(_tile != noone)

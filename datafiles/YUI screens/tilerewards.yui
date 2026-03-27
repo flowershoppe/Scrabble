@@ -13,9 +13,9 @@ root:
   theme: elektra light
   elements:  
     - type: panel
-      size: {h: 135, w: 750}
+      size: {h: 270, w: 1500}
       canvas:
-        top: 260
+        top: 475
         center: h
       animate:
         on_visible:
@@ -30,7 +30,7 @@ root:
             on_visible:
               opacity: &fade_in
           canvas:
-            top: 10
+            top: 20
           elements:
             - type: text
               text: Select a Reward
@@ -42,9 +42,9 @@ root:
               opacity: &fade_in
           alignment: center
           layout: horizontal
-          spacing: 25
+          spacing: 50
           canvas:
-            bottom: 25
+            bottom: 50
           elements: @array_rewards
           template:
             type: panel
@@ -52,7 +52,7 @@ root:
               on_visible:
                 opacity: &fade_in
             layout: canvas
-            size: 64
+            size: 128
             background: @@ ~oGame.tile_sprite
             events:
               on_click: 
@@ -62,25 +62,25 @@ root:
               - type: text
                 alignment: center
                 canvas:
-                  bottom: 5
+                  bottom: 10
                 text: @letter
                 font: ~oGame.tile_font
               - type: text
                 text: @pointvalue
                 font: ~oGame.tile_font_small
                 canvas:
-                  right: 5
+                  right: 10
                 color: @@ ~isGreater(@letter, @pointvalue) then red else black
         - type: panel
           canvas:
             center: h
-            bottom: 15
+            bottom: 30
           layout: horizontal
           elements: @array_rewards              
           padding: 0
-          spacing: 25
+          spacing: 50
           template:
-            size: 64
+            size: 128
             type: image
             sprite: @@ ~spShadow
 
