@@ -7,8 +7,8 @@ old_money = 0;
 money_earned = 0;
 levels_completed = 0;
 levels = [];
-stage_count = 1;
-level_count = 1;
+stage_count = 3;
+level_count = 3;
 vowel_count = 0;
 consonant_count = 0;
 

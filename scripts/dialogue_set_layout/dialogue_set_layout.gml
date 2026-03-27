@@ -4,7 +4,7 @@ function dialogue_set_layout(index) {
   switch (index) {
     default:
     case -1: // Default
-      default_font = fnt_oswald_small;
+      default_font = fnt_oswald_tiny;
       
       textbox_left = 32;
       textbox_width = dialogue_gui_width - textbox_left * 2;
@@ -17,7 +17,7 @@ function dialogue_set_layout(index) {
       textbox_options_width = 128;
       textbox_show = true;
       
-      line_spacing = 20;
+      line_spacing = 23;
       line_max = 6;
       dialogue_set_character(-1);
     break;

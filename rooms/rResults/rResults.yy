@@ -19,11 +19,13 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"yui_document","path":"objects/yui_document/yui_document.yy",},"propertyId":{"name":"yui_file","path":"objects/yui_document/yui_document.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"YUI screens/info_bar.yui\"",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"yui_document","path":"objects/yui_document/yui_document.yy",},"propertyId":{"name":"data_context","path":"objects/yui_document/yui_document.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"oRun",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"yui_document","path":"objects/yui_document/yui_document.yy",},"propertyId":{"name":"is_full_screen","path":"objects/yui_document/yui_document.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":15.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":30.0,"scaleY":2.0,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"Info_Bar","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"YUI","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"YUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Tilebag","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Tilebag","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[],"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRAssetLayer":"","%Name":"Assets","assets":[
+        {"$GMRSpriteGraphic":"v1","%Name":"graphic_6D71046F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6D71046F","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spFrut2","path":"sprites/spFrut2/spFrut2.yy",},"x":960.0,"y":544.0,},
+      ],"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"rResults",
   "parent":{
@@ -41,10 +43,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":540,
+    "Height":1080,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":960,
+    "Width":1920,
   },
   "sequenceId":null,
   "views":[
